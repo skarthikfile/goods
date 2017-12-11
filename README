@@ -1,0 +1,75 @@
+WHAT IS OVERACTIVE LOGISTICS?
+Overactive Logistics is a freight forwarding open source software solution being developed for the cargo transportation industry. 
+It runs in both web based or stand alone modes and provides a graphical user interface with rich client capabilities.
+
+WHERE TO GET UP TO DATE INFORMATION ABOUT PROJECT STATUS?
+You can get information about the project current status and development efforts in the project's site located at:
+http://overactive.sourceforge.net
+
+HOW TO CONTACT US?
+You can contact us sending us an email to:
+overactive.source@gmail.com
+
+UNDER WHAT OPEN SOURCE LICENSE IS OVERACTIVE LOGISTICS RELEASED?
+Overactive Logistics is being release under the Overactive Source Public License which is a derivative from the Mozilla Public License.
+
+WHAT TO EXPECT IN THIS VERSION (PRE ALPHA 1.6)?
+This version contains the latest progress made on Shipments and Shipment Charges
+
+-Shipment (Air, Ground, Ocean) tracking subsystem
+-Shipment (Air, Ground, Ocean) tracking reports
+-Incomming/Outgoing Shipments (Air, Ground, Ocean)
+-Shipment Charges and Freight Charges (Income, Expense) 
+-Vendor maintenance
+-Package Type maintenance
+-SCAC maintenance
+-IATA maintenance
+-FMC maintenance
+-Carrier maintenace (Air, Land, Ocean)
+-Forwarding Agent maintenance
+-Ports maintenance
+-Schedule D maintenance
+-Schedule K maintenance
+-Customer maintenance
+-Security roles maintenance
+-Users maintenance
+-Company maintenance
+-Item Definition Maintenance
+-Commodity Maintenance
+-Container Maintenance
+-Locations Maintenance
+
+HOW TO INSTALL?
+
+You can find detailed installation instructions by visiting the project's site at: http://overactive.sourceforge.net
+Click on "News" and select the link "Installation Instructions" in the right side section titled "Project Links".
+
+The following is a high level overview of the installation steps:
+
+Software requirements
+-JBoss 4.2.2 GA
+-MySQL Server 5.0
+-MySQL Tools 5.0
+-MySQL Connector/J 5.0.4
+-Web browser with Java Plug-in 1.4.0 or higher 
+
+Database creation (using MySQL Administrator)
+-Create a new database schema (catalog) called LOGISTICS
+-Do a "Restore" using the "logistics.sql" backup file in the newly created "Target Schema" LOGISTICS
+
+Application deployment (in JBoss)
+-Type the database user name and password where required inside the file mysql-ds.xml and deploy it in JBoss
+-Deploy the mysql-connector-java-5.0.4-bin.jar driver in JBoss
+-Deploy the overactive-logistics.ear in JBoss
+
+Running the aplication
+-Open your web browser and type the following link:
+ http://localhost:8080/logistics/
+-Once the login screen shows up access the application using the following:
+ User : admin
+ Password: admin
+
+
+
+
+
